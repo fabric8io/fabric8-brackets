@@ -11,7 +11,8 @@ RUN apt-get -y update && \
   cd /var/brackets/extensions/user/zaggino.brackets-git && \
   curl -o /tmp/brackets.zip https://s3.amazonaws.com/extend.brackets/zaggino.brackets-git/zaggino.brackets-git-0.14.9.zip && \
   unzip /tmp/brackets.zip && \
-  rm /tmp/brackets.zip
+  rm /tmp/brackets.zip && \
+  mkdir -p /support/extensions/user/zaggino.brackets-git
 
 EXPOSE 80
 
